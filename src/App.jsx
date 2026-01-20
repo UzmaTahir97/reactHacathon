@@ -12,6 +12,8 @@ import AboutUsImg from "./assets/aboutUs.jpg"
 import LogoImg from"./assets/logoo.png"
 import NewnailsImg from"./assets/newnails.webp" 
 import PeopleImg from"./assets/people.jpg"
+import MainImg from "./assets/man.jpg"
+import WomenImage from "./assets/women.jpg"
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(SplitText);
 
@@ -108,7 +110,7 @@ gsap.from(split.chars,{
 </svg>
 "The best experience ever! The reviews helped me choose the perfect salon for my makeover."</p>
           <a className="inline-flex items-center">
-            <img alt="testimonial" src="./src/assets/man.jpg" className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
+            <img alt="testimonial" src={MainImg} className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
             <span className="flex-grow flex flex-col pl-4">
               <span className="title-font font-medium text-gray-900">Elan joe</span>
                <span className="text-gray-500 text-sm">⭐⭐⭐⭐ </span>
@@ -129,7 +131,7 @@ gsap.from(split.chars,{
 </svg>
 "I love how easy it is to find salons through Glam The Girl! Their platform is user-friendly and always up-to-date."</p>
           <a className="inline-flex items-center">
-            <img alt="testimonial" src="./src/assets/women.jpg" className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
+            <img alt="testimonial" src={WomenImage} className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
             <span className="flex-grow flex flex-col pl-4">
               <span className="title-font font-medium text-gray-900">Alper Kamu</span>
                <span className="text-gray-500 text-sm">⭐⭐⭐ </span>
