@@ -11,6 +11,7 @@ import cards from "./cards";
 import AboutUsImg from "./assets/aboutUs.jpg"
 import LogoImg from"./assets/logoo.png"
 import NewnailsImg from"./assets/newnails.webp" 
+import PeopleImg from"./assets/people.jpg"
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(SplitText);
 
@@ -86,7 +87,7 @@ gsap.from(split.chars,{
 
 "I can't imagine going back to the old ways of finding salons. Glam The Girl makes everything so convenient!"</p>
           <a className="inline-flex items-center">
-            <img alt="testimonial" src="./src/assets/people.jpg" className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
+            <img alt="testimonial" src={PeopleImg} className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"/>
             <span className="flex-grow flex flex-col pl-4">
               <span className="title-font font-medium text-gray-900">Tem Bush</span>
               <span className="text-gray-500 text-sm">⭐⭐⭐⭐⭐ </span>
