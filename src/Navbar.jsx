@@ -14,15 +14,16 @@ return(
 
     <nav className="bg-[#eec0c0] shadow">
  <div className="flex justify-between items-center p-4">
+
 <button  className="md:hidden text-2xl"  onClick={() => setOpen(!open)}>☰</button>
 
           {/* Mobile cart + search */}
-      <div className="flex md:hidden items-center gap-2">
+      {/* <div className="flex md:hidden items-center gap-2">
       
           <img  src="./src/assets/shopping-carrt.png" alt="png" className=" w-10 h-10 inline-flex items-center cart mr-2 md:mt-2 sm:mt-3 "/>
      
   <button onClick={() => setOpenSearch(!openSearch)}><img src= "/search.png" alt="search" className="w-12  mt-3   items-center" /></button>
-</div>
+</div> */}
         {/* Desktop menu */}
         <ul className="hidden md:flex gap-6  items-center ">
       <li className="hover:text-white hover:border  border-[#f19696] p-1 rounded-3xl">SALON</li>
@@ -31,8 +32,9 @@ return(
       <li className="hover:text-white hover:border   border-[#f19696] p-1 rounded-3xl">CONTACT US</li>
 </ul>
 
-<a className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center  lg:items-center lg:justify-center mb-4 md:mb-0">
-       <img src="./src/assets/logoo .png"  alt=""className="ml-3 text-xl  w-35  bg-black logo"  />
+{/* <a className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center  lg:items-center lg:justify-center mb-4 md:mb-0"> */}
+<a className="flex items-center">
+       <img src="./src/assets/logoo .png"  alt=""className="   w-32  bg-black logo"  />
     </a>
         
 {/* {desktop serch +cart} */}
@@ -53,7 +55,7 @@ return(
     
   {/* Mobile Search Input */}
     {openSearch && (
-      <div className="md:hidden  p-4  border border-white rounded-3xl bg-white/100 text-black">
+      <div className="md:hidden  border border-white rounded-3xl bg-white/100 text-black">
         <input
           type="search"
           placeholder="Search..."
@@ -66,13 +68,17 @@ return(
 
 {/* {Moble Menu} */}
   {open && (
-      <ul className="md:hidden p-4 bg-[#eec0c0] text-black  hover:text-white hover:border            border-[#f19696] p-1 rounded-3xl space-y-3">
-        <img src={search}  alt="search" className="w-6 h-6"/>
+      <ul className="md:hidden p-4 bg-[#eec0c0] text-black  hover:text-white hover:border   border-[#f19696] p-1 rounded-3xl space-y-3">
       <li className="hover:text-white hover:border   border-[#f19696] p-1 rounded-3xl ">SALON</li>
        <li className="hover:text-white hover:border   border-[#f19696] p-1 rounded-3xl">OUR EXPERTIES</li>
       <li className="hover:text-white hover:border   border-[#f19696] p-1 rounded-3xl">TESTIMONIALS</li>
       <li className="hover:text-white hover:border   border-[#f19696] p-1 rounded-3xl">CONTACT US</li> 
-
+        <div className="flex md:hidden items-center gap-2">
+      
+          <img  src="./src/assets/shopping-carrt.png" alt="png" className=" w-10 h-10 inline-flex items-center cart mr-2 md:mt-2 sm:mt-3 "/>
+     
+  <button onClick={() => setOpenSearch(!openSearch)}><img src= "/search.png" alt="search" className="w-12  mt-3   items-center" /></button>
+</div>
      </ul>
 
       )}
