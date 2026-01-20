@@ -8,6 +8,7 @@ import './App.css'
 import Product from "./Product";
 import Hero from "./Hero";
 import cards from "./cards";
+import AboutUsImg from "./assets/aboutUs.jpg"
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(SplitText);
 
@@ -43,7 +44,8 @@ gsap.from(split.chars,{
 <section class="text-gray-600 body-font bg-gray-100  w-full">
   <div class="container mx-auto flex flex-col md:flex-row items-center px-5 py-20">
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-6/6  mb-10 md:mb-0">
-      <img class="object-cover object-center rounded" alt="hero" src="./src/assets/aboutUs.jpg"/>
+      <img class="object-cover object-center rounded" alt="hero" src={AboutUsImg}/>
+
     </div>
 <div className="mx-auto flex px-5 py-5 items-center  md:flex-row  flex-col ">
     <div  className="lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left  text-center md:pl-16">
