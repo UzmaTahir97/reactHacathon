@@ -10,6 +10,7 @@ import Hero from "./Hero";
 import cards from "./cards";
 import AboutUsImg from "./assets/aboutUs.jpg"
 import LogoImg from"./assets/logoo.png"
+import NewnailsImg from"./assets/newnails.webp" 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(SplitText);
 
@@ -145,7 +146,7 @@ gsap.from(split.chars,{
 
 <section class="text-gray-600 bg-gray-100 body-font">
   <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-    <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero"        src="./src/assets/newnails.webp"/>
+    <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero"        src={NewnailsImg}/>
     <div class="text-center lg:w-2/3 w-full">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-[#f36666]">Amazing Designs,No Joke!!</h1>
       <p class="mb-8 leading-relaxed">Discover my collection of incredible designs that will surprise you with their originality and creativity. From elegant and minimalist patterns to bolder and more eye-catching styles, I have something for everyone. Each design is a unique expression of art and fashion, carefully crafted to highlight the beauty of your nails and complement your personal style. Let me take your nails to the next level with my exclusive designs!</p>
