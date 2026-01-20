@@ -1,0 +1,19 @@
+ .here{
+  border: none;
+  outline: none;
+  border-radius: 30px ;
+ } 
+
+.cart{
+  border: none;
+  border-radius: 50%;
+padding: 0.6%;
+  background-color: rgb(88, 87, 87) ;
+}
+.logo{
+    border: none;
+    border-radius: 50%;
+    padding: 3px 0 3px 0px;
+}
+
+@import "tailwindcss"
