@@ -19,12 +19,14 @@ function Hero() {
 
   return (
     <>
-    <section className=" overflow-hidden   relative mt-15 w-8/6 md:w-1/5 lg:w-full h-[100vh] mx-auto ">
+    
+    <section className=" overflow-hidden   relative mt-15 w-6/6 md:w-5/5 lg:w-full h-[100vh] mx-auto  ">
       <img
         src={images[current]}
         alt="carousel"
-        className="w-full h-full absolute object-cover transition-all duration-700  "
+        className="w-full h-full absolute object-cover object-center transition-all duration-700  "
       />
+    
     </section>
 </> 
 

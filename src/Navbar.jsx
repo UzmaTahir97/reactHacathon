@@ -18,13 +18,7 @@ return(
 
 <button  className="md:hidden text-2xl"  onClick={() => setOpen(!open)}>☰</button>
 
-          {/* Mobile cart + search */}
-      {/* <div className="flex md:hidden items-center gap-2">
-      
-          <img  src={ShoppingCard} alt="png" className=" w-10 h-10 inline-flex items-center cart mr-2 md:mt-2 sm:mt-3 "/>
-     
-  <button onClick={() => setOpenSearch(!openSearch)}><img src= "/search.png" alt="search" className="w-12  mt-3   items-center" /></button>
-</div> */}
+  
         {/* Desktop menu */}
         <ul className="hidden md:flex gap-6  items-center ">
       <li className="hover:text-white hover:border  border-[#f19696] p-1 rounded-3xl">SALON</li>
@@ -33,7 +27,7 @@ return(
       <li className="hover:text-white hover:border   border-[#f19696] p-1 rounded-3xl">CONTACT US</li>
 </ul>
 
-{/* <a className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center  lg:items-center lg:justify-center mb-4 md:mb-0"> */}
+
 <a className="flex items-center">
        <img src={LogoImg} alt=""className="   w-32  bg-black logo"  />
     </a>
@@ -54,7 +48,7 @@ return(
 </div>
 </div>
     
-  {/* Mobile Search Input */}
+   {/* Mobile Search Input */}
     {openSearch && (
       <div className="md:hidden  border border-white rounded-3xl bg-white/100 text-black">
         <input
@@ -65,7 +59,7 @@ return(
           className="w-2x1 p-3 focus:outline-none  focus:ring-0 font-bold  "
         />
       </div>
-    )}
+    )} 
 
 {/* {Moble Menu} */}
   {open && (

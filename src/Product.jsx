@@ -74,8 +74,8 @@ const [cart, setCart] = useState([]);
   removeItem={removeItem}
 />
 
-  <section className="bg-gray-100 body-font w-full">
-      <div className="container mx-auto px-14 sm:px-26 lg:px-8">
+  <section className="bg-gray-100 body-font w-full ">
+      <div className="container mx-auto px-14 sm:px-26 lg:px-8  ">
       <h1 className="text-5xl font-medium title-font text-[#f36666] mb-12 text-left ">OUR EXPERTISE</h1>
     <div   className="flex flex-wrap -m-4">
    
