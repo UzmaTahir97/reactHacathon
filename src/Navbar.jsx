@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import search from "./search.png";
-
+import ShoppingCard from"./assets/shopping-carrt.png"
 
 function Navbar({ search, setSearch }) {
  const [open, setOpen] = useState(false);
@@ -20,7 +20,7 @@ return(
           {/* Mobile cart + search */}
       {/* <div className="flex md:hidden items-center gap-2">
       
-          <img  src="./src/assets/shopping-carrt.png" alt="png" className=" w-10 h-10 inline-flex items-center cart mr-2 md:mt-2 sm:mt-3 "/>
+          <img  src={ShoppingCard} alt="png" className=" w-10 h-10 inline-flex items-center cart mr-2 md:mt-2 sm:mt-3 "/>
      
   <button onClick={() => setOpenSearch(!openSearch)}><img src= "/search.png" alt="search" className="w-12  mt-3   items-center" /></button>
 </div> */}
@@ -39,7 +39,7 @@ return(
         
 {/* {desktop serch +cart} */}
 <div className="hidden md:flex gap-6">
-     <img  src="./src/assets/shopping-carrt.png" alt="png" className=" w-10 h-10 inline-flex items-center cart mr-[-12px] md:mt-1 sm:mt-3 "/>
+     <img  src={ShoppingCard} alt="png" className=" w-10 h-10 inline-flex items-center cart mr-[-12px] md:mt-1 sm:mt-3 "/>
 <div className=" border font-bold bg-white/100 text-black   flex text-center  here">
   <input type="search" placeholder="Search Here..."  value={search} 
     onChange={(e)=> 
@@ -75,7 +75,7 @@ return(
       <li className="hover:text-white hover:border   border-[#f19696] p-1 rounded-3xl">CONTACT US</li> 
         <div className="flex md:hidden items-center gap-2">
       
-          <img  src="./src/assets/shopping-carrt.png" alt="png" className=" w-10 h-10 inline-flex items-center cart mr-2 md:mt-2 sm:mt-3 "/>
+          <img  src={ShoppingCard} alt="png" className=" w-10 h-10 inline-flex items-center cart mr-2 md:mt-2 sm:mt-3 "/>
      
   <button onClick={() => setOpenSearch(!openSearch)}><img src= "/search.png" alt="search" className="w-12  mt-3   items-center" /></button>
 </div>
