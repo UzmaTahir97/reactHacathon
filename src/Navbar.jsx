@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // import search from "./search.png";
 import ShoppingCard from"./assets/shopping-carrt.png"
+import LogoImg from"./assets/logoo.png"
 
 function Navbar({ search, setSearch }) {
  const [open, setOpen] = useState(false);
@@ -34,7 +35,7 @@ return(
 
 {/* <a className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center  lg:items-center lg:justify-center mb-4 md:mb-0"> */}
 <a className="flex items-center">
-       <img src="./src/assets/logoo .png"  alt=""className="   w-32  bg-black logo"  />
+       <img src={LogoImg} alt=""className="   w-32  bg-black logo"  />
     </a>
         
 {/* {desktop serch +cart} */}

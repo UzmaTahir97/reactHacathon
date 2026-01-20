@@ -9,6 +9,7 @@ import Product from "./Product";
 import Hero from "./Hero";
 import cards from "./cards";
 import AboutUsImg from "./assets/aboutUs.jpg"
+import LogoImg from"./assets/logoo.png"
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(SplitText);
 
@@ -161,7 +162,7 @@ gsap.from(split.chars,{
   <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
     <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
 
-      <span class="ml-3 text-xl">  <img src="./src/assets/logoo .png"  alt=""className="ml-3 text-xl  w-35"/></span>
+      <span class="ml-3 text-xl">  <img src={LogoImg} alt=""className="ml-3 text-xl  w-35"/></span>
     </a>
     <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"> © 2026 Glam the Girl  Salon & Spa | All Rights Reserved.
 
