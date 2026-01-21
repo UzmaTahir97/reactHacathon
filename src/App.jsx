@@ -46,7 +46,7 @@ gsap.from(split.chars,{
         <Navbar search={search} setSearch={setSearch}/> 
 
             <Hero />
-<section class="text-gray-600 body-font bg-gray-100  w-full">
+<section class="text-gray-600 body-font bg-gray-100  w-full" id="aboutus">
   <div class="container mx-auto flex flex-col md:flex-row items-center px-5 py-20">
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-6/6  mb-10 md:mb-0">
       <img class="object-cover object-center rounded" alt="hero" src={AboutUsImg}/>
@@ -78,7 +78,7 @@ gsap.from(split.chars,{
     <h1 className="text-5xl font-medium title-font   mb-12 text-center">It's Our Customer Who Love Us</h1>
     <div className="flex flex-wrap -m-4">
       <div className="p-4 md:w-1/3 w-full">
-        <div className="h-full bg-[#eec0c0] p-8 rounded-3xl">
+        <div className="h-full bg-[#eec0c0] p-8 rounded-3xl shadow-md transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-3 hover:scale-[1.03]">
           
           <p className="leading-relaxed mb-6">  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" color="#272520" fill="#413d33" stroke="#2e2c26" strokeWidth="1.5" className="quotations">
     <path d="M14 16C14 14.1144 14 13.1716 14.5858 12.5858C15.1716 12 16.1144 12 18 12C19.8856 12 20.8284 12 21.4142 12.5858C22 13.1716 22 14.1144 22 16C22 17.8856 22 18.8284 21.4142 19.4142C20.8284 20 19.8856 20 18 20C16.1144 20 15.1716 20 14.5858 19.4142C14 18.8284 14 17.8856 14 16Z" />
@@ -99,7 +99,7 @@ gsap.from(split.chars,{
       </div>
     
       <div className="p-4 md:w-1/3 w-full  ">
-        <div className="h-full bg-[#eec0c0] p-8 rounded-3xl">
+        <div className="h-full bg-[#eec0c0] p-8 rounded-3xl  shadow-md transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-3 hover:scale-[1.03]">
           
           <p className="leading-relaxed mb-6">
              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" color="#22201c" fill="#13110d" stroke="#1b1a17" strokeWidth="1.5" className="quotations">
@@ -119,8 +119,8 @@ gsap.from(split.chars,{
         </div>
         </div>
         
-      <div className="p-4 md:w-1/3 w-full">
-        <div className="h-full bg-[#eec0c0] p-8 rounded-3xl">
+      <div className="p-4 md:w-1/3 w-full"  id="testimonials">
+        <div className="h-full bg-[#eec0c0] p-8 rounded-3xl  shadow-md transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-3 hover:scale-[1.03]">
           
           <p className="leading-relaxed mb-6">
              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" color="#131211" fill="#201f1c" stroke="#222120" strokeWidth="1.5" className="quotations">
@@ -147,10 +147,10 @@ gsap.from(split.chars,{
 
 </section>
 
-<section class="text-gray-600 bg-gray-100 body-font">
+<section class="text-gray-600 bg-gray-100 body-font ">
   <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
     <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero"        src={NewnailsImg}/>
-    <div class="text-center lg:w-2/3 w-full">
+    <div class="text-center lg:w-2/3 w-full p-10  shadow-md transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-3 hover:scale-[1.03]">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-[#f36666]">Amazing Designs,No Joke!!</h1>
       <p class="mb-8 leading-relaxed">Discover my collection of incredible designs that will surprise you with their originality and creativity. From elegant and minimalist patterns to bolder and more eye-catching styles, I have something for everyone. Each design is a unique expression of art and fashion, carefully crafted to highlight the beauty of your nails and complement your personal style. Let me take your nails to the next level with my exclusive designs!</p>
       <div class="flex justify-center">

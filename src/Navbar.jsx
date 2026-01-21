@@ -21,10 +21,10 @@ return(
   
         {/* Desktop menu */}
         <ul className="hidden md:flex gap-6  items-center ">
-      <li className="hover:text-white hover:border  border-[#f19696] p-1 rounded-3xl">SALON</li>
-      <li className="hover:text-white hover:border   border-[#f19696] p-1 rounded-3xl">OUR EXPERTIES</li>
-      <li className="hover:text-white hover:border   border-[#f19696] p-1 rounded-3xl">TESTIMONIALS</li>
-      <li className="hover:text-white hover:border   border-[#f19696] p-1 rounded-3xl">CONTACT US</li>
+      <a href="#salon"className="hover:text-white hover:border  border-[#f19696] p-1 rounded-3xl">SALON  </a>
+      <a href="#expertiese" className="hover:text-white hover:border   border-[#f19696] p-1 rounded-3xl">OUR EXPERTIES</a>
+      <a href="#testimonials" className="hover:text-white hover:border border-[#f19696] p-1 rounded-3xl">TESTIMONIALS</a>
+      <a href="#aboutus" className="hover:text-white hover:border   border-[#f19696] p-1 rounded-3xl">ABOUT US</a>
 </ul>
 
 
@@ -39,7 +39,7 @@ return(
   <input type="search" placeholder="Search Here..."  value={search} 
     onChange={(e)=> 
     setSearch (e.target.value)}
-     className="p-3 text-black  focus:outline-none  focus:ring-0 "/>
+     className="p-1  focus:outline-none  focus:ring-0 "/>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="2 -7 30 24 " width="30" height="30" color="#181717" fill="none" stroke="rgb(15, 15, 15)" strokeWidth="1.5" strokeLinecap="round" stroke-lineJoin="round">
     <path d="M17 17L21 21" />
     <path d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z"  />

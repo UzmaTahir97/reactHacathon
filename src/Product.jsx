@@ -74,14 +74,15 @@ const [cart, setCart] = useState([]);
   removeItem={removeItem}
 />
 
-  <section className="bg-gray-100 body-font w-full ">
+  <section className="bg-gray-100 body-font w-full " id="expertiese">
       <div className="container mx-auto px-14 sm:px-26 lg:px-8  ">
       <h1 className="text-5xl font-medium title-font text-[#f36666] mb-12 text-left ">OUR EXPERTISE</h1>
-    <div   className="flex flex-wrap -m-4">
+    <div   className="flex flex-wrap -m-4 ">
    
     {filteredProduct.map((item)=>(
+    
      <div key={item.id} className=" lg:w-1/4 md:w-1/2 
-      sm:w-1/2 p-4 w-full  ">
+      sm:w-1/2 p-4 w-full mb-10 shadow-md transition-all duration-300 ease-in-out md:hover:shadow-2xl md:hover:-translate-y-3 md:hover:scale-[1.01] ">
        <div className="  block  h-90  md-h-72  lg-h-80  h-64 sm:h-72  md:h-80 lg:h-90     
   xl:h-96  rounded-3xl overflow-hidden">
           <video 
@@ -119,7 +120,7 @@ const [cart, setCart] = useState([]);
      
 
       {/* CART */}
-      <div className="mt-10 bg-gray-100 p-5 rounded">
+      <div className="mt-10 bg-gray-100 p-5 rounded  shadow-lg">
         <h2 className="text-xl font-bold mb-4">Cart</h2>
 
         {cart.length === 0 ? (
